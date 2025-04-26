@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- navbar start -->
+      <header>
+        <div class="header-container">
+          <div class="logo">DP</div>
+
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Shop</a>
+            <div class="dropdown">
+              <a href="#">Product Catalog ▾</a>
+              <div class="dropdown-content">
+                <a href="#">Category 1</a>
+                <a href="#">Category 2</a>
+              </div>
+            </div>
+            <a href="#">Contact</a>
+
+            <div class="auth-buttons">
+              <button class="btn login">Login</button>
+              <button class="btn signup">Sign up</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- navbar end -->
+
+      <!-- hero section with crousel start -->
+      <section class="crousel">
+        <img
+          src="https://drapify.store/images/banner/1.png"
+          alt="crousel image"
+          id="crousel-image"
+        />
+      </section>
+
+      <!-- hero section end -->
+
+      <!-- filter section start -->
+
+      <section id="filter-container">
+        <h2>Best Seller</h2>
+        <div id="filter-grid" class="filter-list">
+          <div class="filter-card active" data-category="all">All</div>
+          <div class="filter-card" data-category="women jacket">
+            Women Jacket
+          </div>
+          <div class="filter-card" data-category="women joggers">
+            Women joggers
+          </div>
+          <div class="filter-card" data-category="women jumpsuits">
+            Women jumpsuits
+          </div>
+          <div class="filter-card" data-category="women shorts">
+            Women shorts
+          </div>
+          <div class="filter-card" data-category="women jeans">Women jeans</div>
+          <div class="filter-card" data-category="women shirt">Women shirt</div>
+        </div>
+      </section>
+
+      <!-- filter section end -->
+
+      <section id="product-container">
+        <div id="product-grid" class="product-list"></div>
+      </section>
+
+      <div class="pagination">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <div class="logo">
+              <span>DP</span>
+            </div>
+            <p>
+              Embark on a revolutionary shopping journey with us. We offer a
+              curated selection of premium products, ensuring the highest
+              standards of quality. Our commitment to exceptional customer
+              service guarantees a seamless and satisfying experience. Discover
+              the future of retail, where convenience and excellence converge.
+              Join our community and redefine your expectations of shopping.
+            </p>
+            <div class="footer-contact">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Prime Star Sports
+                Services Private Limited No. 9(18 & 19), Amaravathy Nagar Main
+                Road, Arumbakkam, Chennai, Maduravoyal, Tamil Nadu, India,
+                600106
+              </p>
+              <p><i class="fa-solid fa-phone"></i> +91 767 082 7272</p>
+              <p><i class="fa-solid fa-envelope"></i> info@drapify.store</p>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Product Catalog</h4>
+            <ul>
+              <li><a href="#">Women Jackets</a></li>
+              <li><a href="#">Top</a></li>
+              <li><a href="#">Shorts and Skirts</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li><a href="#">Shirts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- script -->
+    <script type="module" src="./src/js/navbar.js"></script>
+    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="./src/js/crousel.js"></script>
+    <script type="module" src="./src/js/filter.js"></script>
+  </body>
+</html>
