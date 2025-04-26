@@ -70,6 +70,7 @@ To view the live project:
 │       └── filter.js
 │       └── navbar.js
 └── index.html
+└── readme.md
 ```
 
 ## Important Notes
